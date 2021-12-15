@@ -108,7 +108,13 @@ editor["rmagatti/auto-session"] = {
     cmd = {"SaveSession", "RestoreSession", "DeleteSession"},
     config = conf.auto_session
 }
-editor["jdhao/better-escape.vim"] = {opt = true, event = "InsertEnter"}
+editor["jdhao/better-escape.vim"] = {
+    opt = true,
+    event = "InsertEnter",
+    config = function ()
+        vim.g.better_escape_shortcut = {"jj", "jk"}
+    end
+}
 editor["rcarriga/nvim-dap-ui"] = {
     opt = false,
     config = conf.dapui,
@@ -127,5 +133,6 @@ editor["tpope/vim-fugitive"] = {opt = true, cmd = {"Git", "G"}}
 --     event = "BufReadPost",
 --     config = conf.marks
 -- }
+editor["tpope/vim-surround"] = {opt = true, keys = {"c", "d", "y"}}
 
 return editor

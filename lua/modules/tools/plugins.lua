@@ -38,7 +38,7 @@ tools["michaelb/sniprun"] = {
 }
 tools["folke/which-key.nvim"] = {
     opt = true,
-    keys = ",",
+    keys = {"g", "<Space>"},
     config = function() require("which-key").setup {} end
 }
 tools["folke/trouble.nvim"] = {

@@ -46,7 +46,7 @@ function config.symbols_outline()
             Null = {icon = "NULL", hl = "TSType"},
             EnumMember = {icon = "", hl = "TSField"},
             Struct = {icon = "𝓢", hl = "TSType"},
-            Event = {icon = "🗲", hl = "TSType"},
+            Event = {icon = "ﳅ", hl = "TSType"},
             Operator = {icon = "+", hl = "TSOperator"},
             TypeParameter = {icon = "𝙏", hl = "TSParameter"}
         }

@@ -37,5 +37,13 @@ ui["akinsho/nvim-bufferline.lua"] = {
     config = conf.nvim_bufferline
 }
 ui["dstein64/nvim-scrollview"] = {opt = true, event = "BufRead"}
+ui["navarasu/onedark.nvim"] = {
+    opt = false,
+    config = function()
+        vim.g.onedark_style = "warm"
+        vim.g.onedark_toggle_style_keymap = "<space>tc"
+        require("onedark").setup()
+    end
+}
 
 return ui
