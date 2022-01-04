@@ -134,5 +134,15 @@ editor["tpope/vim-fugitive"] = {opt = true, cmd = {"Git", "G"}}
 --     config = conf.marks
 -- }
 editor["tpope/vim-surround"] = {opt = true, keys = {"c", "d", "y"}}
+editor["famiu/bufdelete.nvim"] = {
+    opt = true,
+    cmd = {"Bdelete", "Bwipeout", "Bdelete!", "Bwipeout!"}
+}
+editor["edluffy/specs.nvim"] = {
+    opt = true,
+    event = "CursorMoved",
+    config = conf.specs
+}
+
 
 return editor
