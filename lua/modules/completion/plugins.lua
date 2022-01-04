@@ -11,6 +11,11 @@ completion["williamboman/nvim-lsp-installer"] = {
     after = "nvim-lspconfig"
 }
 completion["tami5/lspsaga.nvim"] = {opt = true, after = "nvim-lspconfig"}
+completion["rmagatti/goto-preview"] = {
+    opt = true,
+    after = "nvim-lspconfig",
+    config = conf.goto_preview
+}
 completion["kosayoda/nvim-lightbulb"] = {
     opt = true,
     after = "nvim-lspconfig",
@@ -25,12 +30,11 @@ completion["hrsh7th/nvim-cmp"] = {
         {"saadparwaiz1/cmp_luasnip", after = "LuaSnip"},
         {"hrsh7th/cmp-nvim-lsp", after = "cmp_luasnip"},
         {"hrsh7th/cmp-nvim-lua", after = "cmp-nvim-lsp"},
-        {"andersevenrud/compe-tmux", branch = "cmp", after = "cmp-nvim-lua"},
-        {"hrsh7th/cmp-path", after = "compe-tmux"},
+        {"andersevenrud/cmp-tmux", after = "cmp-nvim-lua"},
+        {"hrsh7th/cmp-path", after = "cmp-tmux"},
         {"f3fora/cmp-spell", after = "cmp-path"},
         {"hrsh7th/cmp-buffer", after = "cmp-spell"},
-        {"hrsh7th/cmp-cmdline", after = "cmp-buffer"},
-        {"kdheepak/cmp-latex-symbols", after = "cmp-cmdline"}
+        {"kdheepak/cmp-latex-symbols", after = "cmp-buffer"}
         -- {
         --     'tzachar/cmp-tabnine',
         --     run = './install.sh',
